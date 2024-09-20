@@ -1,11 +1,11 @@
 all:
-	g++ -o Payslip_Employee Payslip_Employee.cpp
+	g++ -o meeting2_problem1 meeting2_problem1.cpp
 
 dump:
-	objdump -d Payslip_Employee > Payslip_Employee.asm
+	objdump -d meeting2_problem1 > meeting2_problem1.asm
 
 clean:
-	rm -f Payslip_Employee.o Payslip_Employee
+	rm -f meeting2_problem1.o meeting2_problem1
 
-run: Payslip_Employee
-	./Payslip_Employee
+run: meeting2_problem1
+	./meeting2_problem1
