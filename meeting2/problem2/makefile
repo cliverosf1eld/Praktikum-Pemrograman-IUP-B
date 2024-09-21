@@ -1,11 +1,11 @@
 all:
-	g++ -o meeting2_problem1 meeting2_problem1.cpp
+	g++ -o quadratic_equation quadratic_equation.cpp
 
 dump:
-	objdump -d meeting2_problem1 > meeting2_problem1.asm
+	objdump -d quadratic_equation > quadratic_equation.asm
 
 clean:
-	rm -f meeting2_problem1.o meeting2_problem1
+	rm -f quadratic_equation.o quadratic_equation
 
-run: meeting2_problem1
-	./meeting2_problem1
+run: quadratic_equation
+	./quadratic_equation
