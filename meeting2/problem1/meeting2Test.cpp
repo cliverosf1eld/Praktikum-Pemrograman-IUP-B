@@ -6,14 +6,12 @@ int main()
     int gross, tax, installment, insurance, netsalary;
     string fname, mname, lname;
 
-    cout << "Enter your first Name, middle Name & last Name" << endl;
-    cin >> fname >> mname >> lname;
-    cout << "Gross Salary: ";
-    cin >> gross;
-    cout << "Installment: ";
-    cin >> installment;
-    cout << "Insurance: ";
-    cin >> insurance;
+    fname = "Muhammad";
+    mname = "Gibran";
+    lname = "Basyir";
+    gross = 1000;
+    installment = 100;
+    insurance = 200;
     tax = 0.2 * gross;
     netsalary = gross - tax - installment - insurance;
     cout << "Payslip for Employee" << endl;
