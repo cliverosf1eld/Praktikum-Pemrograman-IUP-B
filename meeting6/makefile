@@ -1,27 +1,27 @@
 # Target to compile the object file
-meeting6: meeting6.o
-	g++ meeting6.o -o meeting6.exe
+examresults: examresults.o
+	g++ examresults.o -o examresults.exe
 
 # Target to compile the C++ program
-meeting6.o: meeting6.cpp
-	g++ -c meeting6.cpp -o meeting6.o
+examresults.o: examresults.cpp
+	g++ -c examresults.cpp -o examresults.o
 
 # Target to run the program (interactively)
-run: meeting6
-	./meeting6.exe
+run: examresults
+	./examresults.exe
 
 # Target to compile the object Test file
-meeting6Test: meeting6Test.o
-	g++ meeting6Test.o -o meeting6Test.exe
+examresultsTest: examresultsTest.o
+	g++ examresultsTest.o -o examresultsTest.exe
 
 # Target to compile the C++ Test program
-meeting6Test.o: meeting6Test.cpp
-	g++ -c meeting6Test.cpp -o meeting6Test.o
+examresultsTest.o: examresultsTest.cpp
+	g++ -c examresultsTest.cpp -o examresultsTest.o
 
 # Target to run the Test program
-test: meeting6Test
-	./meeting6Test.exe
+test: examresultsTest
+	./examresultsTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f meeting6.o meeting6Test.o meeting6.exe meeting6Test.exe
+	rm -f examresults.o examresultsTest.o examresults.exe examresultsTest.exe
