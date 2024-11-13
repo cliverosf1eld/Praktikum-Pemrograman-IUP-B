@@ -1,27 +1,27 @@
 # Target to compile the object file
-inputoutput: inputoutput.o
-	g++ inputoutput.o -o inputoutput.exe
+hw: hw.o
+	g++ hw.o -o hw.exe
 
 # Target to compile the C++ program
-inputoutput.o: inputoutput.cpp
-	g++ -c inputoutput.cpp -o inputoutput.o
+hw.o: hw.cpp
+	g++ -c hw.cpp -o hw.o
 
 # Target to run the program (interactively)
-run: inputoutput
-	./inputoutput.exe
+run: hw
+	./hw.exe
 
 # Target to compile the object Test file
-inputoutputTest: inputoutputTest.o
-	g++ inputoutputTest.o -o inputoutputTest.exe
+hwTest: hwTest.o
+	g++ hwTest.o -o hwTest.exe
 
 # Target to compile the C++ Test program
-inputoutputTest.o: inputoutputTest.cpp
-	g++ -c inputoutputTest.cpp -o inputoutputTest.o
+hwTest.o: hwTest.cpp
+	g++ -c hwTest.cpp -o hwTest.o
 
 # Target to run the Test program
-test: inputoutputTest
-	./inputoutputTest.exe
+test: hwTest
+	./hwTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f inputoutput.o inputoutputTest.o inputoutput.exe inputoutputTest.exe
+	rm -f hw.o hwTest.o hw.exe hwTest.exe
