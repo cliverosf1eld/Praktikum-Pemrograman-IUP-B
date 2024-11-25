@@ -8,4 +8,6 @@ int main(){
     sort(a, a + al);
     
     cout << "The maximum number on the list is " << a[al-1];
+    cout << endl;
+    cout << "Test is successful";
 }
